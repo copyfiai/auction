@@ -2,7 +2,7 @@ import React from 'react'
 
 function logga() {
   return (
-    <div>logga-in</div>
+    <div>logga-in logga in här</div>
   )
 }
 
