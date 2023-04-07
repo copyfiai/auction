@@ -14,43 +14,20 @@ function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
-  // useEffect(() => {
-  //   const handleClickOutside = (event) => {
-  //     if (menuRef.current && !menuRef.current.contains(event.target)) {
-  //       setMenuOpen(false);
-  //     }
-  //   };
-  
-  //   if (menuOpen) {
-  //     document.body.style.overflow = 'hidden';
-  //     menuRef.current.addEventListener('click', handleClickOutside);
-  //   } else {
-  //     document.body.style.overflow = 'unset';
-  //     menuRef.current.removeEventListener('click', handleClickOutside);
-  //   }
-  
-  //   return () => {
-  //     menuRef.current.removeEventListener('click', handleClickOutside);
-  //   };
-  // }, [menuOpen]);
 
-  // const handleMenuItemClick = () => {
-  //   setMenuOpen(false);
-  // };
-  
 
   return (
     <>
       {/* FULL MENU */}
       <ul className="md:flex text-md space-x-6 hidden text-md font-SourceSansPro font-semibold">
         <li className="">
-          <Link class="flex items-center gap-1" href="" as=""><IoMdArrowDropdown />Entreprenad</Link>
+          <Link className="flex items-center gap-1" href="" as=""><IoMdArrowDropdown />Entreprenad</Link>
         </li>
         <li className="">
-        <Link class="flex items-center gap-1" href="" as=""><IoMdArrowDropdown />Lantbruk</Link>
+        <Link className="flex items-center gap-1" href="" as=""><IoMdArrowDropdown />Lantbruk</Link>
         </li>
         <li className="">
-        <Link class="flex items-center gap-1" href="" as=""><IoMdArrowDropdown />Grönyta</Link>
+        <Link className="flex items-center gap-1" href="" as=""><IoMdArrowDropdown />Grönyta</Link>
         </li>
       </ul>
       {/* HAMBURGER MENU */}
