@@ -26,10 +26,10 @@ function Post({post}: Props) {
       <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.description} />
     </Head>
-    <main className="mb-48 m-auto max-w-[1250px] pt-10 flex gap-10">
-        <div className="flex flex-col space-y-4 w-full">
+    <main className="mb-48 m-auto md:max-w-[1250px] pt-10 flex flex-col md:flex-row gap-10">
+        <div className="flex flex-col space-y-4 w-full order-2 md:order-1">
         <h1 className="md:text-3xl text-blueOne-500">{post.title}</h1>
-        <div className="flex space-x-32">
+        <div className="flex md:space-x-32 space-x-10">
             <ul>
                 <li>Märke & Modell: <span className="font-semibold">{post.marke}</span></li>
                 <li>Säljare: <span className="font-semibold">{post.author.name}</span></li>
@@ -43,7 +43,7 @@ function Post({post}: Props) {
         <div>
             <Image width={750} height={750} className="w-full" src={urlFor(post.huvudbild).url()!} alt={post.title} /> 
         </div>  
-        <article className="max-w-3xl flex flex-col gap-5">
+        <article className="md:max-w-3xl flex flex-col gap-5 col-span-1">
                 <h3 className="text-3xl font-semibold text-blueTwo-500">Beskrivning</h3>
                 <PortableText 
                         dataset={process.env.NEXT_PUBLIC_SANITY_DATASET!}
@@ -74,7 +74,7 @@ function Post({post}: Props) {
                 
             </article>
         </div>
-        <div className="w-[550px] flex flex-col space-y-5 font-Lato">
+        <div className="md:w-[550px] flex flex-col space-y-5 font-Lato order-1 md:order-2">
             <div className=" bg-ligtBlue-500 px-5 rounded-sm h-20 flex justify-between items-center">
                 <div className="font-bold">Ledande bud:</div>
                 <div className="text-2xl text-blueTwo-500 font-bold">1134 000 kr</div>
@@ -119,7 +119,7 @@ function Post({post}: Props) {
                     </tr>
                 </tfoot>
             </table>
-            <div className="px-5 rounded-sm h-12 flex justify-between items-center bg-gray-200">
+            <div className="rounded-sm h-12 flex justify-between items-center bg-gray-200">
                 <div className="font-bold text-sm">25% <span className="font-normal">moms tillkommer</span></div>
             </div>
             <div className="flex justify-between gap-2">

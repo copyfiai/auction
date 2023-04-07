@@ -27,15 +27,15 @@ export default function Home({ posts }: Props) {
       
       <main className='flex-col gap-10 pt-10 grow flex'>
         <div className='text-xl font-bold'>Alla auktioner just nu: <span className='text-blueTwo-500 text-2xl'>{posts.length}</span></div>
-        <div className='flex gap-5'>
+        <div className='flex flex-col md:grid xl:grid-cols-5 md:grid-cols-3 justify-center gap-5'>
         {posts.map((post) => {
           return (
-            <div key={post._id} className='w-80 border border-gray-300 relative'>
+            <div key={post._id} className='md:min-w-80 border border-gray-300 relative'>
               <div className='font-bold text-white text-xl bg-blueOne-500 px-4 py-1 absolute z-10 right-[-10px] top-[-10px] shadow-md'>475 000 kr</div>
               <div className='w-5 h-5 absolute bg-blueOne-700 right-[-5.8px] top-[16px] rotate-45' />
               <div className='relative className="object-cover overflow-hidden'>
                 <Link  href={`/auktion/produkt/${post.slug.current}`}>
-                  <Image src={urlFor(post.huvudbild).url()!} width={500} height={500} className='hover:scale-110 duration-300 transitionl' alt={post.title} priority />
+                  <Image src={urlFor(post.huvudbild).url()!} width={600} height={600} className='hover:scale-110 duration-300 transitionl' alt={post.title} priority />
                 </Link>
               </div>
 

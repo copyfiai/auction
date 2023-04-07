@@ -13,7 +13,7 @@ function Header() {
   return (
     <main className='font-SourceSansPro'>
       {/* first */}
-      <div className='flex justify-between px-20 h-10 items-center bg-gray-100'>
+      <div className='md:flex hidden justify-between h-10 items-center bg-gray-100 px-20'>
         <div className='flex gap-5'>
 
           <div className='text-sm font-semibold flex items-center gap-1'><GrContact />Kontakta oss</div>
@@ -24,18 +24,20 @@ function Header() {
         </div>
       </div>
       {/* second */}
-      <div className='flex justify-between h-24 items-center m-auto z-10 relative bg-blueTwo-500 text-white px-20'>
+      <div className=' bg-blueTwo-500 text-white'>
+        <div className='md:px-20 md:w-full w-5/6 flex justify-between h-24 items-center m-auto z-10 relative'>
           <div className='w-40'>
               <Link className='z-10 relative' href='/'>
                   <Image src='/logo/logo-white.svg' alt='parklee-logo' width={250} height={78} />
               </Link>
-          </div>
+            </div>
           <nav>
               <Navbar />
           </nav>
+          </div>
       </div>
       {/* third */}
-      <div className='h-20 bg-gray-100 flex justify-between items-center px-20'>
+      <div className='h-20 bg-gray-100 md:flex hidden justify-between items-center px-20'>
         <div className='flex items-center gap-2'>
           <input className='border-2 border-blueTwo-500 px-5 py-2 rounded-full font-SourceSansPro font-semibold placeholder-gray-600 focus:outline-none w-72' type='text' placeholder='Vad söker du?' />
           <IoSearch className='text-[25px] ml-[-50px] text-blueTwo-500'/>

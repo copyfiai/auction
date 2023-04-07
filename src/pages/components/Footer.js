@@ -9,8 +9,8 @@ function Footer() {
   const time = new Date().getFullYear()
 
   return (
-    <main className='flex h-20 grow-0'>
-      <div className='mt-auto bottom-0 w-full px-20 flex justify-between m-auto items-center'>
+    <main className='flex grow-0'>
+      <div className='mt-auto bottom-0 md:px-20 md:w-full w-5/6 flex justify-between m-auto items-center h-20'>
         <div>
            <p className='text-gray-500 text-sm'>© 2017 - {time} Smidigt. All rights reserved.</p>
         </div>
