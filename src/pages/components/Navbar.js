@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { RxHamburgerMenu, RxCross1 } from 'react-icons/rx';
 import SocialMedia from './SocialMedia';
 import { motion as m } from "framer-motion"
-import { IoMdArrowDropdown } from 'react-icons/Io';
+import { IoMdArrowDropdown } from 'react-icons/io';
 
 
 function Navbar() {
