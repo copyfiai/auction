@@ -1,0 +1,43 @@
+{
+  "name": "parklee",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next-auth/firebase-adapter": "^2.0.1",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.6.0",
+    "@types/firebase": "^3.2.1",
+    "@types/next-auth": "^3.15.0",
+    "@vercel/analytics": "^0.1.11",
+    "eslint": "8.35.0",
+    "eslint-config-next": "13.2.3",
+    "firebase": "^9.19.1",
+    "firebase-admin": "^11.5.0",
+    "framer-motion": "^10.2.3",
+    "next": "13.2.3",
+    "next-auth": "^4.21.1",
+    "next-sanity": "^4.1.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-firebase-hooks": "^5.1.1",
+    "react-firebaseui": "^6.0.0",
+    "react-flowfield": "^0.1.19",
+    "react-icons": "^4.8.0",
+    "react-portable-text": "^0.6.0",
+    "sanity": "^3.8.2",
+    "styled-components": "^5.2.0",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "^2.0.1",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
+  }
+}
